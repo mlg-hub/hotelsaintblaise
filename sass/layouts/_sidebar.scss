@@ -1,10 +1,11 @@
 .sidebar {
     &__list {
-        margin-top: 20rem;
+        margin-top: 25rem;
         list-style: none;
         text-decoration: none;
         font-family: $font-family2 !important;
         border-left: 3px solid $color-secondary;
+        padding-left: 0;
     }
     &__link {
         margin-bottom: 1rem;

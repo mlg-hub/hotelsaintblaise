@@ -1,8 +1,10 @@
 section.sidebar {
     grid-column: 1;
     // background-color: brown;
-    background-image: linear-gradient(to bottom, rgba($color-secondary, .7) 10%, rgba($color-white, .3) 99%);
+    // background-image: linear-gradient(to bottom, rgba($color-secondary, .7) 10%, rgba($color-white, .3) 99%);
+    // background-image: linear-gradient(to bottom, rgba($color-secondary, 1) 90%, rgba($color-tertairy-dark, .5));
     font-size: 1.6rem;
+    background-color: $color-secondary;
     height: 100vh;
     text-align: center;
     position: relative;
@@ -24,13 +26,19 @@ section.sidebar {
                 font-size: 3.5rem;
             }
         }
+        &__pic {
+            width: 10rem;
+            height: 7rem;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 
 section.main {
     grid-column: 2;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba($color-primary, .2) 80%, rgba(#000, .9)), url('../../img/blaise-1-test.JPG');
+    // background-image: linear-gradient(to bottom, rgba($color-black, .2) 80%, rgba(#000, .9)), url('../../img/blaise-1-test.JPG');
     background-size: cover;
     background-repeat: no-repeat;
 }

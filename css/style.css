@@ -1,18 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: [full-start] minmax(8rem, 3fr) [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] [full-end]; }
-
 .h3-helper {
   display: block;
   background-color: #fff;
@@ -132,7 +117,8 @@ body {
 .service__list {
   height: 70vh;
   overflow-y: scroll;
-  margin-right: -3.8rem; }
+  margin-right: -3.8rem;
+  padding-left: 0; }
 
 .service__item {
   display: grid;
@@ -223,7 +209,6 @@ grid-template-rows: repeat(7, 5vw);*/
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
   box-sizing: inherit; }
 
 html {
@@ -232,12 +217,15 @@ html {
 body {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(min-content, 30rem) 1fr; }
+  background-color: #bf8f8f;
+  padding: 0 10px;
+  grid-template-columns: minmax(min-content, 30rem) 1fr;
+  grid-gap: 10px; }
 
 section.sidebar {
   grid-column: 1;
-  background-image: linear-gradient(to bottom, rgba(92, 57, 51, 0.7) 10%, rgba(255, 255, 255, 0.3) 99%);
   font-size: 1.6rem;
+  background-color: #5c3933;
   height: 100vh;
   text-align: center;
   position: relative;
@@ -257,11 +245,15 @@ section.sidebar {
       box-shadow: 0 2px 8px -1px #5c3933; }
       section.sidebar .logo__block--name {
         font-size: 3.5rem; }
+    section.sidebar .logo__pic {
+      width: 10rem;
+      height: 7rem;
+      display: block;
+      margin: 0 auto; }
 
 section.main {
   grid-column: 2;
   position: relative;
-  background-image: linear-gradient(to bottom, rgba(237, 74, 57, 0.2) 80%, rgba(0, 0, 0, 0.9)), url("../../img/blaise-1-test.JPG");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -276,9 +268,13 @@ section.footer {
 
 .footer {
   font-family: "Merienda", cursive; }
+  .footer--icons {
+    position: absolute;
+    bottom: 1rem;
+    left: 29%; }
   .footer__icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     fill: #fff;
     margin-right: 1rem; }
   .footer__copyright {
@@ -290,11 +286,12 @@ section.footer {
     align-items: center; }
 
 .sidebar__list {
-  margin-top: 20rem;
+  margin-top: 25rem;
   list-style: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif !important;
-  border-left: 3px solid #5c3933; }
+  border-left: 3px solid #5c3933;
+  padding-left: 0; }
 
 .sidebar__link {
   margin-bottom: 1rem; }

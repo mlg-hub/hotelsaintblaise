@@ -1,3 +1,4 @@
+import { DashboardRoutingModule } from './dashboard/dashboard/dashboard-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -9,19 +10,25 @@ import { AppComponent } from './app.component';
 // import {MyOwnCustomMaterialModule} from '../components/components.module';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AboutComponent } from './dashboard/dashboard/about/about.component';
+import { ServicesComponent } from './dashboard/dashboard/services/services.component';
+import { GalleryComponent } from './dashboard/dashboard/gallery/gallery.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    AboutComponent,
+    ServicesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    DashboardRoutingModule,
     AppRoutingModule,
-    // BrowserAnimationsModule,
-    // MyOwnCustomMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
