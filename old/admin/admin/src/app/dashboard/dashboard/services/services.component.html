@@ -1,0 +1,12 @@
+<h2>Services</h2>
+
+<div class="collection">
+    <a *ngFor="let service of listServices; let i = index" class="collection-item">
+        <div class="rowe" style="display: flex; justify-content: space-between">
+            <span>{{service}}</span>
+            <span>
+                <a class="waves-effect waves-light btn">Edit</a>
+            </span>
+        </div>
+    </a>
+</div>

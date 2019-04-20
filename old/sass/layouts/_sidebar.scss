@@ -1,0 +1,38 @@
+.sidebar {
+    &__list {
+        margin-top: 25rem;
+        list-style: none;
+        text-decoration: none;
+        font-family: $font-family2 !important;
+        border-left: 3px solid $color-secondary;
+        padding-left: 0;
+    }
+    &__link {
+        margin-bottom: 1rem;
+    }
+    &__link:link,
+    &__link:visited {
+        font-size: 1.4rem;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        // border-left: 2px solid $color-tertairy-dark;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+        transition: all .2s;
+    }
+    &__link:hover {
+        background-color: $color-tertairy-light;
+        font-weight: bold;
+    }
+    &__link:active {
+        background-color: $color-tertairy-dark;
+        // transform: translateY(-3px);
+    }
+}
+
+.active {
+    background-color: $color-tertairy-dark;
+    color: $color-white;
+}

@@ -1,0 +1,20 @@
+.btn {
+    border: none;
+    padding: 1.8rem;
+    color: #fff;
+    font-family: roboto;
+    font-size: 1.6rem;
+    box-shadow: 0px 6px 8px -5px #000;
+    &--secondary {
+        background-color: #5c3933;
+        float: left;
+    }
+    &--service {
+        padding: 1rem;
+        font-size: 1.3rem;
+        background-color: #5c3933;
+        float: right;
+        margin-right: 1rem;
+        margin-top: .5rem;
+    }
+}
